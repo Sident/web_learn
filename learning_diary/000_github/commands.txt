@@ -1,0 +1,19 @@
+git config --global user.name "username"	//set username
+git config --global user.email "email"		//set email
+git clone url					//clone(download) git repository
+git status					//info about modified files
+git add file					//add(or update) file(s) to repository
+git commit -m					//commit last update with a message
+git push					//push(accept) the changes and upload to git repository
+git reset --hard				//reset full directory to HEAD state (commits are stored)
+git reset --hard origin/master			//reset full directory to HEAD state (commits are lost)
+
+
+
+//Delete commits history
+git checkout --orphan latest_branch
+git add -A
+git commit -am "commit message"
+git branch -D master
+git branch -m master
+git push -f origin master

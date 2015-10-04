@@ -9,7 +9,6 @@ git reset --hard				//reset full directory to HEAD state (commits are stored)
 git reset --hard origin/master			//reset full directory to HEAD state (commits are lost)
 
 
-
 //Delete commits history
 git checkout --orphan latest_branch
 git add -A
